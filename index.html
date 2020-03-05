@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria e-comerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="img/back01.webp" onclick="imgbig(this)">
+            <img src="img/back02.webp" onclick="imgbig(this)">
+            <img src="img/back03.webp"  onclick="imgbig(this)">
+            <img src="img/back04.webp"  onclick="imgbig(this)">
+            <img src="img/back05.webp"  onclick="imgbig(this)">
+        </div>
+
+        <div class="img-container">
+            <img id="imageBox" src="img/back01.webp">
+        </div>
+    </div>
+
+
+    <script>
+    
+    function imgbig(smallImg){
+        var fullImg = document.getElementById('imageBox');
+
+        fullImg.src = smallImg.src;
+    }
+    
+    </script>
+</body>
+</html>
